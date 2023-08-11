@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ad4c02b9.css",
+    "main.js": "/static/js/main.6e1a2d4a.js",
+    "static/media/amazing.png": "/static/media/amazing.f5e5a3e103c77d831fb6.png",
+    "static/media/movie.png": "/static/media/movie.5708c4f8595d100ada3a.png",
+    "static/media/book.png": "/static/media/book.4c03733b8929747691d6.png",
+    "static/media/weather.png": "/static/media/weather.98aba21b19c9c62c1244.png",
+    "static/media/portfolio-img2.png": "/static/media/portfolio-img2.d80e3fc7e2231cffbbd7.png",
+    "static/media/youtubeClone.png": "/static/media/youtubeClone.c097c5c8a3b7cdda1e04.png",
+    "static/media/portfolio-img3.png": "/static/media/portfolio-img3.e2bf250541b961cca642.png",
+    "static/media/todolist.png": "/static/media/todolist.734e1cbd85a210a3304f.png",
+    "static/media/tosquiz.png": "/static/media/tosquiz.fdf0084b1d941f6dc41b.png",
+    "static/media/site-bg.jpg": "/static/media/site-bg.54724d703024833ef9c6.jpg",
+    "static/media/portfolio-img1.png": "/static/media/portfolio-img1.65b23e5c313b18600f24.png",
+    "static/media/portfolio2.png": "/static/media/portfolio2.a0baf705966b6eadeecc.png",
+    "static/media/somleng.png": "/static/media/somleng.c3c5c70310944e767f55.png",
+    "static/media/services.png": "/static/media/services.8e66d4fbbd95de45b8db.png",
+    "static/media/automata.png": "/static/media/automata.81c6736a3ce73b511386.png",
+    "static/media/profile.png": "/static/media/profile.919f0c7b67c1a05d2b11.png",
+    "static/media/boyloy.png": "/static/media/boyloy.964cef922fd3be0083f9.png",
+    "static/media/kimlong.jpg": "/static/media/kimlong.9d773125bee791169493.jpg",
+    "static/media/kimlong1.png": "/static/media/kimlong1.d5e1552f5084d5eec2f9.png",
+    "static/media/guessingNumber.png": "/static/media/guessingNumber.67aa24778b4e161db0dd.png",
+    "static/media/tictactoe.png": "/static/media/tictactoe.d4eda826bd7ec00549f3.png",
+    "static/media/qrcode.png": "/static/media/qrcode.8326e587396c7a497a0c.png",
+    "index.html": "/index.html",
+    "main.ad4c02b9.css.map": "/static/css/main.ad4c02b9.css.map",
+    "main.6e1a2d4a.js.map": "/static/js/main.6e1a2d4a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad4c02b9.css",
+    "static/js/main.6e1a2d4a.js"
+  ]
+}

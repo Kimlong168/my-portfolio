@@ -11,7 +11,7 @@ const Home = ({ setDarkMode, darkMode, isAuth, postList }) => {
   const style = darkMode ? "bg-black" : "bg-site";
   return (
     <div className={`${style} bg-no-repeat bg-cover overflow-hidden`}>
-      {/* <Header setDarkMode={setDarkMode} darkMode={darkMode} /> */}
+      <Header setDarkMode={setDarkMode} darkMode={darkMode} />
       <Banner />
       <Nav darkMode={darkMode} />
       <About />

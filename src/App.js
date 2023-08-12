@@ -15,7 +15,6 @@ const App = () => {
 
   const postCollectionRef = collection(db, "posts");
 
-
   useEffect(() => {
     const getPosts = async () => {
       const data = await getDocs(postCollectionRef);

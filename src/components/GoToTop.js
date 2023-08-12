@@ -23,7 +23,7 @@ const GoToTop = () => {
       {showScroll && (
         <div
           onClick={scrollTop}
-          className="fixed right-5 bottom-5 rounded-full bg-white/20 hover:bg-violet-500 w-[40px] h-[40px] grid place-items-center cursor-pointer"
+          className="fixed animate-bounce right-5 bottom-5 rounded-full bg-white/20 hover:bg-violet-500 w-[40px] h-[40px] grid place-items-center cursor-pointer"
         >
           <FaArrowUp />
         </div>

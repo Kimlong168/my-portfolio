@@ -1,5 +1,5 @@
 import React from "react";
-import SkillBox from "./SkillBox"
+import SkillBox from "./SkillBox";
 // motion
 import { motion } from "framer-motion";
 // vartants
@@ -22,11 +22,13 @@ const Services = () => {
     mix-blend-lighten mb-12 lg:mb-0"
           >
             <h2 className="h2 text-accent mb-6 font-bold">What I Do. </h2>
-            <h3 className="font-semibold max-w-[455px] mb-16">
-              I'm a Freelance Front-end Developer with over 5 years of
-              experience.
-            </h3>
-            <GradientBtn content="See my work" link="#work"/>
+            <div className="font-semibold max-w-[455px] mb-16">
+              {/* I'm a Freelance Front-end Developer with over 5 years of
+              experience. */}
+              I am passionate about Software Engineering, Web Development,
+              Designing and Digital Marketing.
+            </div>
+            <GradientBtn content="See my work" link="#work" />
           </motion.div>
           {/* services */}
           <motion.div
@@ -41,7 +43,7 @@ const Services = () => {
               {services.map((item) => {
                 return (
                   <React.Fragment key={item.id}>
-                    <SkillBox {...item} link="#"/>
+                    <SkillBox {...item} link="#" />
                   </React.Fragment>
                 );
               })}

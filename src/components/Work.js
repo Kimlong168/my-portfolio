@@ -38,8 +38,8 @@ const Work = () => {
                 My Latest Works.
               </h2>
               <p className="max-w-sm mb-16">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium odit, ut et autem vero reprehenderit exercitationem
+                Click on View all projects to see my completed projects. And
+                click on the image to link to the project.
               </p>
 
               <button
@@ -51,14 +51,14 @@ const Work = () => {
             </div>
             {/* image */}
             <AchievementBox
-                direction="right"
-                delay={0.2}
-                amount={0.3}
-                pretitle="Web development"
-                image={img1}
-                title="Tailwind, ReactJS, PHP, Laravel, MySQL"
-                latest={true}
-              />
+              direction="right"
+              delay={0.2}
+              amount={0.3}
+              pretitle="Web development"
+              image={img1}
+              title="Tailwind, ReactJS, PHP, Laravel, MySQL"
+              latest={true}
+            />
           </div>
         </div>
 
@@ -97,7 +97,6 @@ const Work = () => {
               </span>
             </div>
             <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-auto mt-5">
-    
               <AchievementBox
                 direction="right"
                 delay={0.2}
@@ -106,7 +105,6 @@ const Work = () => {
                 url="https://beat-022-qr-code.netlify.app/"
                 image={qrcode}
                 title="Beat 022 QR Code"
-
               />
               <AchievementBox
                 direction="right"
@@ -189,7 +187,7 @@ const Work = () => {
                 image={kimlong1}
                 title="Portfolio Website (1)"
               />
-                    <AchievementBox
+              <AchievementBox
                 direction="right"
                 delay={0.2}
                 amount={0.3}

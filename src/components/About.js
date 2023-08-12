@@ -12,9 +12,9 @@ const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
-  return ( 
-    <section id="about" className="section mb-0 lg:mb-24 "  ref={ref}>
-      <div className="container mx-auto" >
+  return (
+    <section id="about" className="section mb-0 lg:mb-24 " ref={ref}>
+      <div className="container mx-auto">
         <motion.div
           variants={fadeIn("right", 0.3)}
           initial="hidden"
@@ -41,10 +41,12 @@ const About = () => {
             {/* text */}
             <div>
               <h2 className="text-accent h2 font-bold mt-5">About me.</h2>
-              <h3 className="mb-4 font-semibold">
-                I'm a Freelance Front-end Developer with over 5 years of
-                experience.
-              </h3>
+              <div className="mb-4 font-semibold">
+                {/* I'm a Freelance Front-end Developer with over 5 years of
+                experience. */}
+                I'm a year 3 student majoring in Computer Science at the CADT,
+                specializing in Software Engineering.
+              </div>
             </div>
             <p className="mb-6">
               Hi there, My name is Chann Kimlong. I am a front-end web

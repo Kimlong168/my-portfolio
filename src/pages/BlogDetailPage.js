@@ -5,7 +5,8 @@ import SharingButton from "../components/SharingButton";
 import { useParams } from "react-router-dom";
 import GoToTop from "../components/GoToTop";
 import Loading from "../components/Loading";
-// import LikeButton from "../components/LikeButton";
+import LikeButton from "../components/LikeButton";
+import "../style.css"
 const BlogDetailPage = ({ postList, setDarkMode, darkMode }) => {
   // Get the current URL
   var currentURL = window.location.href;
@@ -20,8 +21,8 @@ const BlogDetailPage = ({ postList, setDarkMode, darkMode }) => {
 
   const style = darkMode ? "bg-black" : "bg-site";
   let title = "title";
-  // let likesNum = 0;
-  // let postID = "";
+  let likesNum = 0;
+  let postID = "";
   return (
     <div
       className={`${style} bg-no-repeat bg-cover min-h-screen overflow-hidden pb-24 relative`}
@@ -30,15 +31,17 @@ const BlogDetailPage = ({ postList, setDarkMode, darkMode }) => {
 
       <div id="detail" className="container mx-auto">
         <div className="mb-5">
-          <Link to="/blogs">◀️ Back</Link>
+          <Link to="/blogs">
+            <span>◀️ Back</span>
+          </Link>
         </div>
         {postList.length === 0 && <Loading />}
         <div>
           {postList.map((post) => {
             if (post.id === id) {
               title = post.title;
-              // likesNum = parseInt(post.likes);
-              // postID = post.id;
+              likesNum = parseInt(post.likes);
+              postID = post.id;
               return (
                 <>
                   <h1 class="text-3xl lg:text-5xl font-bold uppercase mb-5 text-center text-white/50">

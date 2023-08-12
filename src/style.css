@@ -1,0 +1,8 @@
+@media screen and (max-width: 768px) {
+
+    /* Your CSS rules for smaller screens go here */
+    #markdown img {
+
+        /* width: 100% */
+    }
+}

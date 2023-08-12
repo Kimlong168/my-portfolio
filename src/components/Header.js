@@ -6,7 +6,7 @@ import { FaSun, FaMoon } from "react-icons/fa";
 import Logo from "../assets/logo.png";
 const Header = ({ setDarkMode, darkMode }) => {
   return (
-    <header className="py-8">
+    <header className="py-8" id="top">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           {/* logo */}

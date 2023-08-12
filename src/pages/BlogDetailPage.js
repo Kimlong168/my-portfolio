@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Markdown from "markdown-to-jsx";
 import SharingButton from "../components/SharingButton";
 import { useParams } from "react-router-dom";
-
+import GoToTop from "../components/GoToTop";
 import Loading from "../components/Loading";
 // import LikeButton from "../components/LikeButton";
 const BlogDetailPage = ({ postList, setDarkMode, darkMode }) => {
@@ -24,7 +24,7 @@ const BlogDetailPage = ({ postList, setDarkMode, darkMode }) => {
   // let postID = "";
   return (
     <div
-      className={`${style} bg-no-repeat bg-cover min-h-screen overflow-hidden pb-24`}
+      className={`${style} bg-no-repeat bg-cover min-h-screen overflow-hidden pb-24 relative`}
     >
       <Header setDarkMode={setDarkMode} darkMode={darkMode} />
 
@@ -58,6 +58,7 @@ const BlogDetailPage = ({ postList, setDarkMode, darkMode }) => {
       </div>
       {/* <LikeButton likesNum={likesNum} id={postID} /> */}
       <SharingButton url={currentURL} title={title} />
+      <GoToTop />
     </div>
   );
 };

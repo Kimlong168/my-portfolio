@@ -25,6 +25,7 @@ import weather from "../assets/weather.png";
 import youtubeClone from "../assets/youtubeClone.png";
 import automata from "../assets/automata.png";
 import portfilio2 from "../assets/portfolio2.png";
+import linkTree from "../assets/linkTree.png";
 const Work = () => {
   const [showProjects, setShowProjects] = useState(false);
   return (
@@ -231,6 +232,15 @@ const Work = () => {
                 url="https://automata-project.netlify.app/"
                 image={automata}
                 title="Automata Final Project (Group project)"
+              />
+              <AchievementBox
+                direction="right"
+                delay={0.2}
+                amount={0.3}
+                pretitle="Web development"
+                url="https://kimlong-linktree.netlify.app/"
+                image={linkTree}
+                title="Link Tree"
               />
             </div>
           </div>

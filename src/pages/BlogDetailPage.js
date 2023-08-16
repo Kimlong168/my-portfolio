@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import GoToTop from "../components/GoToTop";
 import Loading from "../components/Loading";
 import LikeButton from "../components/LikeButton";
-import "../style.css"
+import "../style.css";
 const BlogDetailPage = ({ postList, setDarkMode, darkMode }) => {
   // Get the current URL
   var currentURL = window.location.href;

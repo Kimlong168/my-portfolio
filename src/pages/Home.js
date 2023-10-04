@@ -7,6 +7,7 @@ import Services from "../components/Services";
 import Work from "../components/Work";
 import Blog from "../components/Blog";
 import Contact from "../components/Contact";
+import DateAndTime from "../components/DateAndTime";
 const Home = ({ setDarkMode, darkMode, isAuth, postList }) => {
   const style = darkMode ? "bg-black" : "bg-site";
   return (
@@ -18,8 +19,10 @@ const Home = ({ setDarkMode, darkMode, isAuth, postList }) => {
       <Services />
       <Work />
       <Blog postList={postList} />
-      <Contact />
+      <DateAndTime />
 
+      <Contact />
+     
       {/* <div className='h-[2300px]'></div> */}
     </div>
   );

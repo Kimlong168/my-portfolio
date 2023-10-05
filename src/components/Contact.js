@@ -6,8 +6,6 @@ import { fadeIn } from "../variants";
 // icons
 import {
   FaGithub,
-  FaYoutube,
-  FaDribbble,
   FaFacebook,
   FaInstagram,
   FaTiktok,
@@ -43,29 +41,29 @@ const Contact = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex gap-x-8 lg:gap-x-24 my-8 justify-center animate-bounce"
+            className="flex gap-x-8 lg:gap-x-24 my-8 justify-center"
           >
             <a
               href="https://github.com/Kimlong168"
-              className="grid place-items-center text-xl  lg:text-4xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full p-2 border-4 border-transparent hover:border-white transition-all"
+              className="grid place-items-center text-3xl  lg:text-5xl  rounded-full p-2 border-4 border-transparent hover:border-white transition-all"
             >
               <FaGithub />
             </a>
             <a
               href="https://instagram.com/kimlonggggggg_101?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
-              className="grid place-items-center text-xl lg:text-4xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full p-2 border-4 border-transparent hover:border-white transition-all"
+              className="grid place-items-center text-3xl lg:text-5xl  rounded-full p-2 border-4 border-transparent hover:border-white transition-all"
             >
               <FaInstagram />
             </a>
             <a
               href="https://www.facebook.com/phnompenhcrown.fc.7?mibextid=ZbWKwL"
-              className="grid place-items-center text-xl  lg:text-4xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full p-2 border-4 border-transparent hover:border-white transition-all"
+              className="grid place-items-center text-3xl  lg:text-5xl  rounded-full p-2 border-4 border-transparent hover:border-white transition-all"
             >
               <FaFacebook />
             </a>
             <a
               href="https://www.tiktok.com/@__c609?is_from_webapp=1&sender_device=pc"
-              className="grid place-items-center text-xl  lg:text-4xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full p-2 border-4 border-transparent hover:border-white transition-all"
+              className="grid place-items-center text-3xl  lg:text-5xl  rounded-full p-2 border-4 border-transparent hover:border-white transition-all"
             >
               <FaTiktok />
             </a>

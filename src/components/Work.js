@@ -23,6 +23,7 @@ import qrcode from "../assets/qrcode.png";
 import somleng from "../assets/somleng.png";
 import weather from "../assets/weather.png";
 import youtubeClone from "../assets/youtubeClone.png";
+import facebookClone from "../assets/facebookClone.png";
 import automata from "../assets/automata.png";
 import portfilio2 from "../assets/portfolio2.png";
 import linkTree from "../assets/linkTree.png";
@@ -142,6 +143,15 @@ const Work = () => {
                 url="https://youtube168-clone.netlify.app/"
                 image={youtubeClone}
                 title="Youtube Home page Clone"
+              />
+              <AchievementBox
+                direction="right"
+                delay={0.2}
+                amount={0.3}
+                pretitle="Web development"
+                url="https://kimlong168.github.io/erobot.github.io/"
+                image={facebookClone}
+                title="Facebook Clone"
               />
               <AchievementBox
                 direction="right"

@@ -69,8 +69,8 @@ const Banner = () => {
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
               When you face a problem, God is giving you a chance to learn a
-              lesson. Don't quit, keep fighting and you will learn something
-              valueable.
+              lesson. Don't quit, keep fighting and you will learn something new
+              and valuable.
             </motion.p>
             {/* social */}
             <motion.div

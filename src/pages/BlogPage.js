@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import BlogWrapper from "../components/BlogWrapper";
 import BlogInBlogPage from "../components/BlogInBlogPage";
+
 const BlogPage = ({ postList, setDarkMode, darkMode }) => {
   if (postList.length === 0) return null;
 

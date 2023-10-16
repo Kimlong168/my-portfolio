@@ -7,7 +7,7 @@ const CountUpNumber = ({ inView, start, end, duration, text1, text2 }) => {
       <div className="text-[40px] font-tertiary text-gradient mb-2">
         {inView ? (
           <CountUp start={start} end={end} duration={duration} />
-        ) : null}
+        ) : "0"}
       </div>
       <div className="font-primary text-sm tracking-[2px]">
         {text1}

@@ -51,9 +51,9 @@ const Banner = () => {
                   2000,
                   "UI/UX Designer",
                   2000,
-                  "Freelancer",
+                  "Digital Marketer",
                   2000,
-                  "ប្រុសស្មោះ",
+                  "Freelancer",
                   2000,
                 ]}
                 className="text-accent"

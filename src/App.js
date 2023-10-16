@@ -8,7 +8,7 @@ import { db } from "./firebase-config";
 import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
   // const [postList, setPostList] = useState(localStorage.getItem("postList"));
   const [postList, setPostList] = useState([]);

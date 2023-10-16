@@ -1,6 +1,6 @@
 import React from "react";
 import GradientBtn from "./GradientBtn";
-
+import Image from "../assets/kimlong.jpg";
 // intersection observer hook
 import { useInView } from "react-intersection-observer";
 // motion
@@ -15,13 +15,27 @@ const About = () => {
   return (
     <section id="about" className="section mb-0 lg:mb-24 " ref={ref}>
       <div className="container mx-auto">
+        {/* image */}
         <motion.div
+          className="mx-auto lg:hidden"
+          variants={fadeIn("right", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+        >
+          <img
+            className="rounded-full"
+            src={Image}
+            alt={Image}
+          />
+        </motion.div>
+        {/* <motion.div
           variants={fadeIn("right", 0.3)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
           className="lg:hidden rounded-full object-fit overflow-hidden border-b-2  border-pink-500  bg-about bg-contain bg-no-repeat h-[350px] mix-blend-lighten bg-top"
-        ></motion.div>
+        ></motion.div> */}
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
           {/* img */}
           <motion.div

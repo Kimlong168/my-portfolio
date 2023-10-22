@@ -3,6 +3,6 @@
     /* Your CSS rules for smaller screens go here */
     #markdown img {
 
-        /* width: 100% */
+        width: 100% !important;
     }
 }

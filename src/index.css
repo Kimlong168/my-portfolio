@@ -68,6 +68,11 @@
 
 #markdown img{
   margin: 10px auto ;
+  width: 100% !important;
+}
+
+.bg-dark {
+  background-color: rgb(21,21,33);
 }
 
 

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import img1 from "../assets/portfolio-img3.png";
 import BlogBox from "./BlogBox";
-const BlogRelated = ({ postList, tags, id }) => {
+const BlogRelated = ({ postList, tags, id, scrollTop }) => {
   function haveCommonText(string1, string2) {
     const words1 = string1.split(",");
     const words2 = string2.split(",");
@@ -25,17 +25,19 @@ const BlogRelated = ({ postList, tags, id }) => {
     if (related && post.id !== id) {
       return (
         <>
-          <BlogBox
-            key={post.id}
-            id={post.id}
-            direction="right"
-            delay={0.2}
-            amount={0.3}
-            author={post.author.name}
-            image={post.img ? post.img : img1}
-            title={post.title}
-            latest={false}
-          />
+          <div onClick={scrollTop}>
+            <BlogBox
+              key={post.id}
+              id={post.id}
+              direction="right"
+              delay={0.2}
+              amount={0.3}
+              author={post.author.name}
+              image={post.img ? post.img : img1}
+              title={post.title}
+              latest={false}
+            />
+          </div>
         </>
       );
     }

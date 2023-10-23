@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import GoToTop from "../components/GoToTop";
 import Loading from "../components/Loading";
 import { useEffect, useState } from "react";
+import Footer from "../components/Footer";
 // import LikeButton from "../components/LikeButton";
 import "../style.css";
 import BlogRelated from "../components/BlogRelated";
@@ -60,10 +61,12 @@ const BlogDetailPage = ({
       .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
       .join(" ");
   }
-
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div
-      className={`${style} bg-no-repeat bg-cover min-h-screen overflow-hidden pb-24 relative`}
+      className={`${style} bg-no-repeat bg-cover min-h-screen overflow-hidden  relative`}
     >
       <Header setDarkMode={setDarkMode} darkMode={darkMode} />
 
@@ -140,8 +143,9 @@ const BlogDetailPage = ({
       <GoToTop />
       <div>
         {/* related content */}
-        <BlogRelated postList={postList} tags={tags} id={id} />
+        <BlogRelated postList={postList} tags={tags} id={id} scrollTop={scrollTop}/>
       </div>
+      <Footer isScrollTop={false} scrollTop={scrollTop}/>
     </div>
   );
 };

@@ -1,28 +1,37 @@
 import React from "react";
-
+import SearchBar from "./SearchBar";
 import img1 from "../assets/portfolio-img3.png";
 import BlogBox from "./BlogBox";
-const BlogWrapper = ({ postList }) => {
+const BlogWrapper = ({ postList, setSearchQuery }) => {
+  const [showResult, setShowResult] = React.useState(false);
   return (
     <div>
       <div className="container mx-auto mt-20">
-        <div class="text-gradient flex items-center mb-10 border-b ">
-          <span className="font-bold">All Blogs</span>
+        <div class="text-gradient flex items-center mb-10 border-b rounded-r-full">
+          <div className="flex justify-between items-center w-full p-2">
+            <div className="font-bold">
+              {!showResult ? "All Blogs" : "Results"}
+            </div>{" "}
+            <SearchBar
+              setSearchQuery={setSearchQuery}
+              setShowResult={setShowResult}
+            />
+          </div>
         </div>
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-auto">
           {postList.map((post) => (
             // <Link to={`/blog?${post.id}`}>
-              <BlogBox
-                key={post.id}
-                id={post.id}
-                direction="right"
-                delay={0.2}
-                amount={0.3}
-                author={post.author.name}
-                image={post.img ? post.img : img1}
-                title={post.title}
-                latest={false}
-              />
+            <BlogBox
+              key={post.id}
+              id={post.id}
+              direction="right"
+              delay={0.2}
+              amount={0.3}
+              author={post.author.name}
+              image={post.img ? post.img : img1}
+              title={post.title}
+              latest={false}
+            />
             // </Link>
           ))}
         </div>

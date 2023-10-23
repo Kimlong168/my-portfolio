@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import BlogWrapper from "../components/BlogWrapper";
 import BlogInBlogPage from "../components/BlogInBlogPage";
 
-const BlogPage = ({ postList, setDarkMode, darkMode }) => {
+const BlogPage = ({ postList, setDarkMode, darkMode, setSearchQuery }) => {
   if (postList.length === 0) return null;
 
   const style = darkMode ? "bg-black" : "bg-site";
@@ -13,7 +13,7 @@ const BlogPage = ({ postList, setDarkMode, darkMode }) => {
     >
       <Header setDarkMode={setDarkMode} darkMode={darkMode} />
       <BlogInBlogPage postList={postList} />
-      <BlogWrapper postList={postList} />
+      <BlogWrapper postList={postList} setSearchQuery={setSearchQuery}/>
     </div>
   );
 };

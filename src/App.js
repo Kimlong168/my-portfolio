@@ -22,6 +22,7 @@ const App = () => {
   const [data, setData] = useState("");
   // const [postList, setPostList] = useState(localStorage.getItem("postList"));
   const [postList, setPostList] = useState([]);
+  const [allpostLists, setAllPostLists] = useState([]);
 
   const postCollectionRef = collection(db, "posts");
   console.log("search keyword", searchQuery);
@@ -33,6 +34,7 @@ const App = () => {
       );
       console.log("data", data);
       setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+      setAllPostLists(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
       // localStorage.setItem(
       //   "postList",
       //   JSON.stringify(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
@@ -51,6 +53,9 @@ const App = () => {
       );
       if (result.length !== 0) {
         setPostList(result);
+        setAllPostLists(
+          data.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
+        );
       } else {
         alert("Search Not Found!");
       }
@@ -100,7 +105,7 @@ const App = () => {
           path="/blog/:id"
           element={
             <BlogDetailPage
-              postList={postList}
+              postList={allpostLists}
               setDarkMode={setDarkMode}
               darkMode={darkMode}
               setSearchQuery={handlSearch}

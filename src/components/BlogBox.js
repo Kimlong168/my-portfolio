@@ -22,7 +22,7 @@ const BlogBox = ({
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: true, amount: amount }}
-      className="flex-1 group overflow-hidden relative border-2 border-white/50 rounded-xl cursor-pointer inline-block"
+      className="flex-1 group overflow-hidden relative border-2 border-white/50 rounded-xl cursor-pointer inline-block w-full"
       style={style}
     >
       <Link to={`/blog/${id}`}>

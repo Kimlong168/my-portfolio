@@ -118,7 +118,7 @@ const BlogDetailPage = ({
                     <img
                       src={post.img}
                       alt=""
-                      className="w-[90%] mx-auto block max-h-[450px] rounded"
+                      className="w-full md:w-[90%] mx-auto block max-h-[450px] rounded"
                     />
                     <div className="text-sm text-center mt-3 text-blue-400 underline">
                       (<a href={post.img}>View cover image</a>)

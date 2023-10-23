@@ -8,14 +8,16 @@ const BlogWrapper = ({ postList, setSearchQuery }) => {
     <div>
       <div className="container mx-auto mt-20">
         <div class="text-gradient flex items-center mb-10 border-b rounded-r-full">
-          <div className="flex justify-between items-center w-full p-2">
-            <div className="font-bold">
+          <div className="flex justify-between items-center w-full py-2 pr-2 gap-3">
+            <div className="font-bold whitespace-nowrap">
               {!showResult ? "All Blogs" : "Results"}
-            </div>{" "}
-            <SearchBar
-              setSearchQuery={setSearchQuery}
-              setShowResult={setShowResult}
-            />
+            </div>
+            <div className="flex-2">
+              <SearchBar
+                setSearchQuery={setSearchQuery}
+                setShowResult={setShowResult}
+              />
+            </div>
           </div>
         </div>
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-auto">

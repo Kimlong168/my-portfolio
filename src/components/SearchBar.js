@@ -9,10 +9,10 @@ const SearchBar = ({ setSearchQuery, setShowResult }) => {
   };
   return (
     <div>
-      <div className="mx-auto max-w-md">
+      <div className="mx-auto ">
         <form
           action=""
-          className="relative mx-auto w-max"
+          className="relative mx-auto"
           onSubmit={handleSubmit}
         >
           <input

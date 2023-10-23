@@ -12,8 +12,8 @@ const BlogPage = ({ postList, setDarkMode, darkMode, setSearchQuery }) => {
       className={`${style} bg-no-repeat bg-cover min-h-screen overflow-hidden pb-24`}
     >
       <Header setDarkMode={setDarkMode} darkMode={darkMode} />
-      <BlogInBlogPage postList={postList} />
-      <BlogWrapper postList={postList} setSearchQuery={setSearchQuery}/>
+      <BlogInBlogPage postList={postList} setSearchQuery={setSearchQuery} />
+      <BlogWrapper postList={postList} setSearchQuery={setSearchQuery} />
     </div>
   );
 };

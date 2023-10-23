@@ -5,7 +5,7 @@ import img1 from "../assets/portfolio-img1.png";
 import img2 from "../assets/portfolio-img2.png";
 import img3 from "../assets/portfolio-img3.png";
 
-const Blog = ({ postList }) => {
+const Blog = ({ postList, setSearchQuery }) => {
   if (postList.length === 0) return null;
   return (
     <div className="my-10 lg:mb-0" id="blog">
@@ -22,11 +22,14 @@ const Blog = ({ postList }) => {
                 experience in web development, digital marketing, UX/UI design
                 and also my life experience.
               </p>
-              <Link to="/">
-                <button className="btn btn-sm">Go to My portfolio</button>
-              </Link>
+              <div onClick={() => setSearchQuery("")}>
+                <Link to="/">
+                  <button className="btn btn-sm">Go to My portfolio</button>
+                </Link>
+              </div>
             </div>
             {/* image */}
+
             <BlogBox
               id={postList[0].id}
               direction="right"

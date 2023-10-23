@@ -103,6 +103,7 @@ const App = () => {
               postList={postList}
               setDarkMode={setDarkMode}
               darkMode={darkMode}
+              setSearchQuery={handlSearch}
             />
           }
         />

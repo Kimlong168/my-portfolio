@@ -9,7 +9,12 @@ import { useEffect, useState } from "react";
 // import LikeButton from "../components/LikeButton";
 import "../style.css";
 import BlogRelated from "../components/BlogRelated";
-const BlogDetailPage = ({ postList, setDarkMode, darkMode }) => {
+const BlogDetailPage = ({
+  postList,
+  setDarkMode,
+  darkMode,
+  setSearchQuery,
+}) => {
   const [tags, setTags] = useState([]);
   // Get the current URL
   var currentURL = window.location.href;
@@ -51,9 +56,9 @@ const BlogDetailPage = ({ postList, setDarkMode, darkMode }) => {
   function toCapitalCase(str) {
     return str
       .toLowerCase()
-      .split(' ')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
+      .split(" ")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
   }
 
   return (
@@ -64,9 +69,11 @@ const BlogDetailPage = ({ postList, setDarkMode, darkMode }) => {
 
       <div id="detail" className="container mx-auto">
         <div className="mb-5">
-          <Link to="/blogs">
-            <span>◀️ Back</span>
-          </Link>
+          <div onClick={() => setSearchQuery("")}>
+            <Link to="/blogs">
+              <span>◀️ Back</span>
+            </Link>
+          </div>
         </div>
         {postList.length === 0 && <Loading />}
         <div>
@@ -120,7 +127,7 @@ const BlogDetailPage = ({ postList, setDarkMode, darkMode }) => {
       <GoToTop />
       <div>
         {/* related content */}
-        <BlogRelated postList={postList} tags={tags} id={id}/>
+        <BlogRelated postList={postList} tags={tags} id={id} />
       </div>
     </div>
   );

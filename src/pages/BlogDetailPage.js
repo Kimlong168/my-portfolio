@@ -98,7 +98,7 @@ const BlogDetailPage = ({
                     "{post.title}"
                   </h1>
                   {/* tag */}
-                  <div className="flex justify-center items-center w-full gap-3 mb-12">
+                  <div className="flex justify-center items-center w-full gap-3 mb-5">
                     {tags.map((tag, index) => (
                       <span
                         className={`${
@@ -109,6 +109,19 @@ const BlogDetailPage = ({
                       </span>
                     ))}
                   </div>
+
+                  {/* cover image */}
+                  <div className="mb-12">
+                    <img
+                      src={post.img}
+                      alt=""
+                      className="w-[90%] mx-auto block max-h-[450px] rounded"
+                    />
+                    <div className="text-sm text-center mt-3 text-blue-400 underline">
+                      (<a href={post.img}>View cover image</a>)
+                    </div>
+                  </div>
+
                   {/* body */}
                   <div id="markdown" className="text-white/90">
                     <Markdown>{post.content}</Markdown>

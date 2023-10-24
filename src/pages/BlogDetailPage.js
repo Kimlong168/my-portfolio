@@ -100,13 +100,15 @@ const BlogDetailPage = ({
                   <h1 class="text-3xl lg:text-5xl font-bold uppercase mb-5 text-center text-white">
                     "{post.title}"
                   </h1>
+
                   {/* tag */}
-                  <div className="flex justify-center items-center w-full gap-3 mb-5">
+                  <div className="flex justify-center items-center gap-3 lg:gap-5 w-full  mb-5">
                     {tags.map((tag, index) => (
                       <span
+                        title={`tag-${tag.trim()}`}
                         className={`${
                           colors[index] ? colors[index] : "bg-red-400"
-                        } text-white text-sm font-semibold py-1.5 px-3 rounded-full mr-2 min-w-[50px] text-center`}
+                        } text-white text-sm font-semibold py-1.5 px-3 rounded-full min-w-[50px] text-center`}
                       >
                         {toCapitalCase(tag).trim()}
                       </span>
@@ -117,9 +119,10 @@ const BlogDetailPage = ({
                   {post.img && (
                     <div className="mb-12">
                       <img
+                        title="Cover image"
                         src={post.img}
                         alt=""
-                        className="w-full md:w-[90%] mx-auto block max-h-[450px] rounded"
+                        className="w-full lg:w-[90%] mx-auto block max-h-[480px] rounded"
                       />
                       <div className="text-sm text-center mt-3 text-blue-400 underline">
                         (<a href={post.img}>View cover image</a>)

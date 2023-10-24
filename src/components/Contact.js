@@ -1,17 +1,16 @@
 import React from "react";
+import Footer from "./Footer";
 // motion
 import { motion } from "framer-motion";
 // vartants
 import { fadeIn } from "../variants";
 // icons
-import {
-  FaGithub,
-  FaFacebook,
-  FaInstagram,
-  FaTiktok,
-} from "react-icons/fa";
+import { FaGithub, FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const Contact = () => {
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <section id="contact" className="section mb-[500px] lg:mb-[120px]">
       <div className="container mx-auto">
@@ -32,10 +31,10 @@ const Contact = () => {
             <a href="https://t.me/kimlong_chann">855 85 739 468</a>
           </div>
         </motion.div>
-        <div>
+        {/* <div>
           <p className="text-center mt-10">Follow me on:</p>
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <motion.div
             variants={fadeIn("up", 0.6)}
             initial="hidden"
@@ -68,7 +67,16 @@ const Contact = () => {
               <FaTiktok />
             </a>
           </motion.div>
-        </div>
+        </div> */}
+        <motion.div
+          variants={fadeIn("up", 0.6)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="flex gap-x-8 lg:gap-x-24 my-8 justify-center"
+        >
+          <Footer scrollTop={scrollTop} isScrollTop={false} />
+        </motion.div>
       </div>
     </section>
   );

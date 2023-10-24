@@ -90,7 +90,7 @@ const BlogDetailPage = ({
                 <>
                   {/* header tag */}
                   <Helmet>
-                    <title>{post.title}</title>
+                    <title>{`Blog | ${post.title}`}</title>
                     <link rel="canonical" href={currentURL} />
                     <meta
                       property="og:image"

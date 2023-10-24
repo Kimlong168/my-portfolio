@@ -71,6 +71,25 @@ const BlogDetailPage = ({
     <div
       className={`${style} bg-no-repeat bg-cover min-h-screen overflow-hidden  relative`}
     >
+      {/* header tag */}
+      <Helmet>
+        <meta
+          property="og:image"
+          content="https://firebasestorage.googleapis.com/v0/b/kimlonglinktree.appspot.com/o/images%2Fthumnail.avif?alt=media&token=4cb8bced-74c2-47aa-ae17-c276d9896f32&_gl=1*jaqf61*_ga*OTk3ODc0MjQxLjE2OTE2NDA5MjI.*_ga_CW55HF8NVT*MTY5ODE5MDk5MC41OS4xLjE2OTgxOTExNjIuNTQuMC4w"
+        />
+        <meta
+          name="description"
+          content="welcome to my blog website - Kimlong Chann"
+        />
+        {/* <meta
+                      property="og:image"
+                      content={
+                        post.img
+                          ? `${post.img}`
+                          : "https://images.unsplash.com/photo-1697519755368-84be46c440e9?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      }
+                    /> */}
+      </Helmet>
       <Header setDarkMode={setDarkMode} darkMode={darkMode} />
 
       <div id="detail" className="container mx-auto">
@@ -91,27 +110,6 @@ const BlogDetailPage = ({
               authName = post.author.name;
               return (
                 <>
-                  {/* header tag */}
-                  <Helmet>
-                    <meta
-                      property="og:image"
-                      content="https://firebasestorage.googleapis.com/v0/b/kimlonglinktree.appspot.com/o/images%2Fthumnail.avif?alt=media&token=4cb8bced-74c2-47aa-ae17-c276d9896f32&_gl=1*jaqf61*_ga*OTk3ODc0MjQxLjE2OTE2NDA5MjI.*_ga_CW55HF8NVT*MTY5ODE5MDk5MC41OS4xLjE2OTgxOTExNjIuNTQuMC4w"
-                    />
-                    <title>{`Blog | ${post.title}`}</title>
-                    <link rel="canonical" href={currentURL} />
-                    <meta
-                      name="description"
-                      content="welcome to my blog website - Kimlong Chann"
-                    />
-                    {/* <meta
-                      property="og:image"
-                      content={
-                        post.img
-                          ? `${post.img}`
-                          : "https://images.unsplash.com/photo-1697519755368-84be46c440e9?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      }
-                    /> */}
-                  </Helmet>
                   {/* date */}
                   <div className="text-center text-blue-400 mb-4 text-xl">
                     {post.date ? (

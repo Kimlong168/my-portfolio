@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { setDoc, doc } from "firebase/firestore";
-import { db, auth } from "../firebase-config";
+import { db } from "../firebase-config";
 import { v4 as uuidv4 } from "uuid";
 import { getDocs, collection } from "firebase/firestore";
 

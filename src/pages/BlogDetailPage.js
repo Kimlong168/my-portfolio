@@ -7,6 +7,7 @@ import GoToTop from "../components/GoToTop";
 import Loading from "../components/Loading";
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
+import { Helmet } from "react-helmet";
 // import LikeButton from "../components/LikeButton";
 import "../style.css";
 import BlogRelated from "../components/BlogRelated";
@@ -87,6 +88,19 @@ const BlogDetailPage = ({
               postID = post.id;
               return (
                 <>
+                  {/* header tag */}
+                  <Helmet>
+                    <title>{post.title}</title>
+                    <link rel="canonical" href={currentURL} />
+                    <meta
+                      property="og:image"
+                      content={
+                        post.img
+                          ? post.img
+                          : "https://media.istockphoto.com/id/1338916974/photo/top-10.jpg?s=2048x2048&w=is&k=20&c=GVmJKqIJ1PMK4Ji7loCam9fV0i2myMkcCVFsGaECGXI"
+                      }
+                    />
+                  </Helmet>
                   {/* date */}
                   <div className="text-center text-blue-400 mb-4 text-xl">
                     {post.date ? (

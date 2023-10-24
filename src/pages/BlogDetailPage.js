@@ -96,8 +96,8 @@ const BlogDetailPage = ({
                       property="og:image"
                       content={
                         post.img
-                          ? post.img
-                          : "https://media.istockphoto.com/id/1338916974/photo/top-10.jpg?s=2048x2048&w=is&k=20&c=GVmJKqIJ1PMK4Ji7loCam9fV0i2myMkcCVFsGaECGXI"
+                          ? `${post.img}`
+                          : "https://images.unsplash.com/photo-1697519755368-84be46c440e9?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       }
                     />
                   </Helmet>

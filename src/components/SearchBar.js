@@ -15,6 +15,7 @@ const SearchBar = ({ setSearchQuery, setShowResult }) => {
             onBlur={() => {
               setShowResult(false);
             }}
+            onFocus={() => setShowResult(true)}
             type="search"
             name="search"
             onChange={(e) => setSearch(e.target.value)}

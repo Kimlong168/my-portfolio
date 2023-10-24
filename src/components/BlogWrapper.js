@@ -10,7 +10,7 @@ const BlogWrapper = ({ postList, setSearchQuery }) => {
         <div class="text-gradient flex items-center mb-10 border-b rounded-r-full">
           <div className="flex justify-between items-center w-full py-2 pr-2 gap-3">
             <div className="font-bold whitespace-nowrap">
-              {!showResult ? "All Blogs" : "Results"}
+              {!showResult ? "All Blogs" : "Search"}
             </div>
             <div className="flex-2">
               <SearchBar

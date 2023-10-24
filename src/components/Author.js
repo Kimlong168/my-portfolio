@@ -1,39 +1,34 @@
 import React from "react";
-import {  FaTiktok } from "react-icons/fa";
+import kimlong from "../assets/kimlong.jpg";
 import { Link } from "react-router-dom";
-const Footer = ({ isScrollTop, scrollTop }) => {
+import { FaTiktok } from "react-icons/fa";
+const Author = () => {
   return (
-    <div>
-      <section className=" mt-20">
-        <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
-          <nav className="flex flex-wrap justify-center -mx-5 -my-2">
-            <div className="px-5 py-2">
-              <Link
-                to="/"
-                className="text-base leading-6 text-white hover:text-gray-400"
-              >
-                Home
-              </Link>
-            </div>
-            <div className="px-5 py-2">
-              {isScrollTop ? (
-                <div
-                  onClick={scrollTop}
-                  className="text-base leading-6 text-white hover:text-gray-400 inline-block cursor-pointer"
-                >
-                  Blog
-                </div>
-              ) : (
-                <Link
-                  to="/blogs"
-                  className="text-base leading-6 text-white hover:text-gray-400"
-                >
-                  Blogs
-                </Link>
-              )}
-            </div>
-          </nav>
-          <div className="flex justify-center mt-8 space-x-6">
+    <div className=" mt-20">
+      <div className="text-center">About the author</div>
+      <div className="rounded-3xl mt-16 shadow-3xl my-3 bg-gray-900/20 border-white/50 border-2">
+        {/* <img src="https://i.imgur.com/dYcYQ7E.png" alt="" className="w-full max-h-[200px]" /> */}
+        <div className="flex justify-center ">
+          <a href="https://kimlongchann.online/kimlong.jpg">
+            <img
+              src={kimlong}
+              alt=""
+              className="rounded-full border-solid border-white border-[2px] -mt-10 w-[150px] h-[150px]"
+            />
+          </a>
+        </div>
+        <div className="text-center px-3 pt-2">
+          <h3 className="text-white bold font-sans text-2xl text-semibold ">
+            Chann kimlong
+          </h3>
+          <p className="mt-2 font-sans font-light text-white w-[90%] md:w-[60%] mx-auto block">
+            "I am currently a third-year student at CADT, majoring in Computer
+            Science and specializing in Software Engineering. I am passionate
+            about web development"
+          </p>
+        </div>
+        <div className="flex justify-center pb-8 text-white">
+          <div className="flex justify-center space-x-6">
             <Link
               to="https://www.facebook.com/phnompenhcrown.fc.7?mibextid=ZbWKwL"
               className="text-gray-400 hover:text-white"
@@ -102,13 +97,10 @@ const Footer = ({ isScrollTop, scrollTop }) => {
               </svg>
             </Link>
           </div>
-          <p className="mt-8 text-base leading-6 text-center text-gray-400">
-            © 2023 Kimlong Chann, All rights reserved.
-          </p>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
 
-export default Footer;
+export default Author;

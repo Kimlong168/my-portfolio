@@ -9,8 +9,10 @@ import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
 // import LikeButton from "../components/LikeButton";
+import Author from "../components/Author";
 import "../style.css";
 import BlogRelated from "../components/BlogRelated";
+import { auth } from "../firebase-config";
 const BlogDetailPage = ({
   postList,
   setDarkMode,
@@ -33,7 +35,7 @@ const BlogDetailPage = ({
   let title = "title";
   let likesNum = 0;
   let postID = "";
-
+  let authName = "";
   useEffect(() => {
     postList.map((post) => {
       if (post.id === id) {
@@ -86,6 +88,7 @@ const BlogDetailPage = ({
               title = post.title;
               likesNum = parseInt(post.likes);
               postID = post.id;
+              authName = post.author.name;
               return (
                 <>
                   {/* header tag */}
@@ -152,7 +155,10 @@ const BlogDetailPage = ({
                   <div id="markdown" className="text-white/90">
                     <Markdown>{post.content}</Markdown>
                   </div>
-                  <small className="text-xl">Author: {post.author.name}</small>
+                  <div className="text-2xl text-pink-500 font-semibold my-10">
+                    Written By{" "}
+                    <div className="text-blue-400">{post.author.name}</div>
+                  </div>
                 </>
               );
             }
@@ -164,6 +170,13 @@ const BlogDetailPage = ({
       {/* <LikeButton likesNum={likesNum} id={postID} /> */}
       <SharingButton url={currentURL} title={title} />
       <GoToTop />
+
+      {/* about the author */}
+      {authName.toLowerCase() === "chann kimlong" && (
+        <div className="container mx-auto">
+          <Author />
+        </div>
+      )}
       <div>
         {/* related content */}
         <BlogRelated

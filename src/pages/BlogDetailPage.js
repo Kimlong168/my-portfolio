@@ -93,6 +93,10 @@ const BlogDetailPage = ({
                     <title>{`Blog | ${post.title}`}</title>
                     <link rel="canonical" href={currentURL} />
                     <meta
+                      name="description"
+                      content="welcome to my blog website - Kimlong Chann"
+                    />
+                    <meta
                       property="og:image"
                       content={
                         post.img

@@ -114,16 +114,18 @@ const BlogDetailPage = ({
                   </div>
 
                   {/* cover image */}
-                  <div className="mb-12">
-                    <img
-                      src={post.img}
-                      alt=""
-                      className="w-full md:w-[90%] mx-auto block max-h-[450px] rounded"
-                    />
-                    <div className="text-sm text-center mt-3 text-blue-400 underline">
-                      (<a href={post.img}>View cover image</a>)
+                  {post.img && (
+                    <div className="mb-12">
+                      <img
+                        src={post.img}
+                        alt=""
+                        className="w-full md:w-[90%] mx-auto block max-h-[450px] rounded"
+                      />
+                      <div className="text-sm text-center mt-3 text-blue-400 underline">
+                        (<a href={post.img}>View cover image</a>)
+                      </div>
                     </div>
-                  </div>
+                  )}
 
                   {/* body */}
                   <div id="markdown" className="text-white/90">
@@ -143,9 +145,14 @@ const BlogDetailPage = ({
       <GoToTop />
       <div>
         {/* related content */}
-        <BlogRelated postList={postList} tags={tags} id={id} scrollTop={scrollTop}/>
+        <BlogRelated
+          postList={postList}
+          tags={tags}
+          id={id}
+          scrollTop={scrollTop}
+        />
       </div>
-      <Footer isScrollTop={false} scrollTop={scrollTop}/>
+      <Footer isScrollTop={false} scrollTop={scrollTop} />
     </div>
   );
 };

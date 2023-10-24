@@ -50,26 +50,7 @@
   border-radius: 100%;
 }
 
-/* custom markdawn style */
-#markdown a {
-  text-decoration: underline !important;
-  color: rgb(65, 127, 240) !important;
-}
 
-#markdown a:hover {
-  color: rgb(65, 65, 222) !important;
-}
-
-#markdown img {
-  margin: 10px auto;
-  width: 100% !important;
-}
-
-
-/* blog background for dark mode */
-.bg-dark {
-  background-color: rgb(21, 21, 33);
-}
 
 
 @layer base {
@@ -130,7 +111,29 @@
     padding-left: 15px;
     font-family: "Courier New", Courier, monospace !important;
     font-style: italic;
+    /* background-color: rgba(164, 157, 157, 0.307); */
     @apply font-medium;
+  }
+
+  /* custom markdawn style */
+  #markdown a {
+    text-decoration: underline !important;
+    color: rgb(65, 127, 240) !important;
+  }
+
+  #markdown a:hover {
+    color: rgb(65, 65, 222) !important;
+  }
+
+  #markdown img {
+    margin: 10px auto;
+    width: 100% !important;
+  }
+
+
+  /* blog background for dark mode */
+  .bg-dark {
+    background-color: rgb(21, 21, 33);
   }
 
 }

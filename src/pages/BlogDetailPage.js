@@ -72,7 +72,7 @@ const BlogDetailPage = ({
     // Dynamically change the og:image meta tag
     const ogImageTag = document.querySelector('meta[property="og:image"]');
     if (ogImageTag) {
-      ogImageTag.setAttribute('content', 'https://firebasestorage.googleapis.com/v0/b/kimlonglinktree.appspot.com/o/images%2Fthumnail.avif?alt=media&token=4cb8bced-74c2-47aa-ae17-c276d9896f32&_gl=1*jaqf61*_ga*OTk3ODc0MjQxLjE2OTE2NDA5MjI.*_ga_CW55HF8NVT*MTY5ODE5MDk5MC41OS4xLjE2OTgxOTExNjIuNTQuMC4w');
+      ogImageTag.setAttribute('content', 'https://firebasestorage.googleapis.com/v0/b/kimlonglinktree.appspot.com/o/images%2Ftest.avif?alt=media&token=95215d64-d20d-4f23-96a5-514ab5bba157&_gl=1*y5npy5*_ga*OTk3ODc0MjQxLjE2OTE2NDA5MjI.*_ga_CW55HF8NVT*MTY5ODE5MDk5MC41OS4xLjE2OTgxOTMyODIuNDYuMC4w');
     }
   }, []);
 

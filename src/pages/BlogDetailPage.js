@@ -68,21 +68,19 @@ const BlogDetailPage = ({
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  useEffect(() => {
-    // Dynamically change the og:image meta tag
-    const ogImageTag = document.querySelector('meta[property="og:image"]');
-    if (ogImageTag) {
-      ogImageTag.setAttribute('content', 'https://firebasestorage.googleapis.com/v0/b/kimlonglinktree.appspot.com/o/images%2Ftest.avif?alt=media&token=95215d64-d20d-4f23-96a5-514ab5bba157');
-    }
-  }, []);
-
+  // useEffect(() => {
+  //   // Dynamically change the og:image meta tag
+  //   const ogImageTag = document.querySelector('meta[property="og:image"]');
+  //   if (ogImageTag) {
+  //     ogImageTag.setAttribute('content', 'https://firebasestorage.googleapis.com/v0/b/kimlonglinktree.appspot.com/o/images%2Ftest.avif?alt=media&token=95215d64-d20d-4f23-96a5-514ab5bba157');
+  //   }
+  // }, []);
 
   return (
     <div
       className={`${style} bg-no-repeat bg-cover min-h-screen overflow-hidden  relative`}
     >
       {/* header tag */}
- 
 
       <Header setDarkMode={setDarkMode} darkMode={darkMode} />
 
@@ -104,6 +102,14 @@ const BlogDetailPage = ({
               authName = post.author.name;
               return (
                 <>
+                  {/* head tag */}
+                  <Helmet>
+                    <title>Blog | {post.title}</title>
+                    <meta
+                      name="description"
+                      content={`${post.title}`}
+                    />
+                  </Helmet>
                   {/* date */}
                   <div className="text-center text-blue-400 mb-4 text-xl">
                     {post.date ? (

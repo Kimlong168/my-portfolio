@@ -109,7 +109,7 @@
   code {
     border-left: 3px solid rgb(154, 152, 152);
     padding-left: 15px;
-    font-family: "Courier New", Courier, monospace !important;
+    /* font-family: "Courier New", Courier, monospace !important; */
     font-style: italic;
     /* background-color: rgba(164, 157, 157, 0.307); */
     @apply font-medium;

@@ -105,10 +105,15 @@ const BlogDetailPage = ({
                   {/* head tag */}
                   <Helmet>
                     <title>Blog | {post.title}</title>
-                    <meta
-                      name="description"
-                      content={`${post.title}`}
-                    />
+                    {/* <meta
+                      property="og:image"
+                      content={
+                        post.img
+                          ? `${post.img}`
+                          : "https://kimlongchann.online/thumnail.avif"
+                      }
+                    /> */}
+                    <meta name="description" content={`${post.title}`} />
                   </Helmet>
                   {/* date */}
                   <div className="text-center text-blue-400 mb-4 text-xl">

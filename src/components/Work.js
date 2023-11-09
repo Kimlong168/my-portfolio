@@ -27,6 +27,7 @@ import facebookClone from "../assets/facebookClone.png";
 import automata from "../assets/automata.png";
 import portfilio2 from "../assets/portfolio2.png";
 import linkTree from "../assets/linkTree.png";
+import sportsNews from "../assets/sportsNews.png";
 const Work = () => {
   const [showProjects, setShowProjects] = useState(false);
   return (
@@ -251,6 +252,15 @@ const Work = () => {
                 url="https://kimlong-linktree.netlify.app/"
                 image={linkTree}
                 title="Link Tree"
+              />
+                   <AchievementBox
+                direction="right"
+                delay={0.2}
+                amount={0.3}
+                pretitle="Web development"
+                url="https://k-news168.netlify.app/"
+                image={sportsNews}
+                title="Sports News"
               />
             </div>
           </div>

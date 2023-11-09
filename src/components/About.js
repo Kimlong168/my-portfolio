@@ -1,6 +1,7 @@
 import React from "react";
 import GradientBtn from "./GradientBtn";
 import Image from "../assets/kimlong.jpg";
+import CVOption from "./CVOption";
 // intersection observer hook
 import { useInView } from "react-intersection-observer";
 // motion
@@ -8,10 +9,13 @@ import { motion } from "framer-motion";
 // vartant
 import { fadeIn } from "../variants";
 import CountUpNumber from "./CountUpNumber";
+import { useState } from "react";
 const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
+
+  const [showCVOption, setShowCVOption] = useState(false);
   return (
     <section id="about" className="section mb-0 lg:mb-24 " ref={ref}>
       <div className="container mx-auto">
@@ -23,11 +27,7 @@ const About = () => {
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
         >
-          <img
-            className="rounded-full"
-            src={Image}
-            alt={Image}
-          />
+          <img className="rounded-full" src={Image} alt={Image} />
         </motion.div>
         {/* <motion.div
           variants={fadeIn("right", 0.3)}
@@ -99,7 +99,7 @@ const About = () => {
               />
             </div>
             <div className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0">
-              <GradientBtn
+              {/* <GradientBtn
                 content="Contact me"
                 link="https://t.me/kimlong_chann"
               />
@@ -108,11 +108,16 @@ const About = () => {
                 className="text-gradient btn-link"
               >
                 My Portfolio
-              </a>
+              </a> */}
+              <div onClick={() => setShowCVOption(true)}>
+                <GradientBtn content="Download MY CV" />
+              </div>
             </div>
           </motion.div>
         </div>
       </div>
+
+      {showCVOption && <CVOption setShowCVOption={setShowCVOption} />}
     </section>
   );
 };

@@ -29,7 +29,7 @@ import portfilio2 from "../assets/portfolio2.png";
 import linkTree from "../assets/linkTree.png";
 import sportsNews from "../assets/sportsNews.png";
 const Work = () => {
-  const [showProjects, setShowProjects] = useState(false);
+  const [showProjects, setShowProjects] = useState(true);
   return (
     <section id="work" className="lg:pt-10">
       <div className="container mx-auto">

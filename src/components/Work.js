@@ -28,8 +28,9 @@ import automata from "../assets/automata.png";
 import portfilio2 from "../assets/portfolio2.png";
 import linkTree from "../assets/linkTree.png";
 import sportsNews from "../assets/sportsNews.png";
+import pos from "../assets/php_pos.png";
 const Work = () => {
-  const [showProjects, setShowProjects] = useState(false);
+  const [showProjects, setShowProjects] = useState(true);
   return (
     <section id="work" className="lg:pt-10">
       <div className="container mx-auto">
@@ -240,6 +241,24 @@ const Work = () => {
                 delay={0.2}
                 amount={0.3}
                 pretitle="Web development"
+                url="https://github.com/Kimlong168/PHP_POS_SYSTEM"
+                image={pos}
+                title="PHP POS System"
+              />
+              <AchievementBox
+                direction="right"
+                delay={0.2}
+                amount={0.3}
+                pretitle="Web development"
+                url="https://github.com/Kimlong168/my-shop/tree/master"
+                image={pos}
+                title="Laravel E-commerce website"
+              />
+              <AchievementBox
+                direction="right"
+                delay={0.2}
+                amount={0.3}
+                pretitle="Web development"
                 url="https://automata-project.netlify.app/"
                 image={automata}
                 title="Automata Final Project (Group project)"
@@ -253,7 +272,7 @@ const Work = () => {
                 image={linkTree}
                 title="Link Tree"
               />
-                   <AchievementBox
+              <AchievementBox
                 direction="right"
                 delay={0.2}
                 amount={0.3}

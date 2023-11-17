@@ -29,6 +29,7 @@ import portfilio2 from "../assets/portfolio2.png";
 import linkTree from "../assets/linkTree.png";
 import sportsNews from "../assets/sportsNews.png";
 import pos from "../assets/php_pos.png";
+import ec from "../assets/ec.png";
 const Work = () => {
   const [showProjects, setShowProjects] = useState(true);
   return (
@@ -251,7 +252,7 @@ const Work = () => {
                 amount={0.3}
                 pretitle="Web development"
                 url="https://github.com/Kimlong168/my-shop/tree/master"
-                image={pos}
+                image={ec}
                 title="Laravel E-commerce website"
               />
               <AchievementBox

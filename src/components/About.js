@@ -58,25 +58,24 @@ const About = () => {
               <div className="mb-4 font-semibold">
                 {/* I'm a Freelance Front-end Developer with over 5 years of
                 experience. */}
-                I'm a year 3 student majoring in Computer Science at the CADT,
-                specializing in Software Engineering.
+                I'm a third-year student majoring in Computer Science at the
+                CADT, specializing in Software Engineering.
               </div>
             </div>
             <p className="mb-6">
-              Hi there, My name is Chann Kimlong. I am a front-end web
-              developer. I can provide clean code and pixel perfect design. I
-              also make the website more & more interactive with web animations.
-              A responsive design makes your website accessible to all
-              users,regardless of their device. You can contact me whenever you
-              need help, i will try my best to deal with your problem as much as
-              possible.
+              Hi there, My name is Chann Kimlong. I am a web developer. I can
+              provide clean code and pixel perfect design. I also make the
+              website more & more interactive with web animations. A responsive
+              design makes your website accessible to all users,regardless of
+              their device. You can contact me whenever you need help, i will
+              try my best to deal with your problem as much as possible.
             </p>
             {/* stats */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <CountUpNumber
                 inView={inView}
                 start={0}
-                end={5}
+                end={3}
                 duration={3}
                 text1="years of"
                 text2="Experience"
@@ -92,7 +91,7 @@ const About = () => {
               <CountUpNumber
                 inView={inView}
                 start={0}
-                end={119}
+                end={1}
                 duration={3}
                 text1="Satisfied"
                 text2="Clients"

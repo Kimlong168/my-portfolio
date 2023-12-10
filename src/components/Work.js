@@ -19,6 +19,7 @@ import amazing from "../assets/amazing.png";
 import boyloy from "../assets/boyloy.png";
 import kimlong1 from "../assets/kimlong1.png";
 import todolist from "../assets/todolist.png";
+import todolist2 from "../assets/todolist2.png";
 import qrcode from "../assets/qrcode.png";
 import somleng from "../assets/somleng.png";
 import weather from "../assets/weather.png";
@@ -281,6 +282,15 @@ const Work = () => {
                 url="https://k-news168.netlify.app/"
                 image={sportsNews}
                 title="Sports News"
+              />
+              <AchievementBox
+                direction="right"
+                delay={0.2}
+                amount={0.3}
+                pretitle="Web development"
+                url="https://kimlong168.github.io/Jqery-todolist/"
+                image={todolist2}
+                title="Jqery - To Do List"
               />
             </div>
           </div>

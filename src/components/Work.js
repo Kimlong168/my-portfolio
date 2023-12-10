@@ -290,7 +290,7 @@ const Work = () => {
                 pretitle="Web development"
                 url="https://kimlong168.github.io/Jqery-todolist/"
                 image={todolist2}
-                title="Jqery - To Do List"
+                title="Jquery - To Do List"
               />
             </div>
           </div>

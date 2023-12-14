@@ -9,6 +9,7 @@ import Blog from "../components/Blog";
 import Contact from "../components/Contact";
 import Gallery from "../components/Gallery";
 import DateAndTime from "../components/DateAndTime";
+import BirthdayCard from "../components/BirthdayCard";
 const Home = ({ setDarkMode, darkMode, isAuth, postList }) => {
   const style = darkMode ? "bg-black" : "bg-site";
   return (
@@ -21,8 +22,8 @@ const Home = ({ setDarkMode, darkMode, isAuth, postList }) => {
       <Work />
       <Blog postList={postList} />
       <Gallery />
-      <DateAndTime />
-
+      {/* <DateAndTime /> */}
+      <BirthdayCard />
       <Contact />
 
       {/* <div className='h-[2300px]'></div> */}

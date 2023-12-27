@@ -28,7 +28,7 @@ const Contact = () => {
             <a href={`mailto:kimlong5244@gmail.com`}>kimlong5244@gmail.com</a>
           </div>
           <div className="italic text-gradient btn-link transition-all max-w-max ">
-            <a href="https://t.me/kimlong_chann">855 85 739 468</a>
+            <a href="https://t.me/kimlong_chann">855 86 961 256</a>
           </div>
         </motion.div>
         {/* <div>

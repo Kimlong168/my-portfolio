@@ -19,6 +19,10 @@ import gallery15 from "../assets/gallery15.jpg";
 import gallery16 from "../assets/gallery16.jpg";
 import gallery17 from "../assets/gallery17.jpg";
 import gallery18 from "../assets/gallery18.jpg";
+import diverse1 from "../assets/diverse1.jpg";
+import diverse2 from "../assets/diverse2.jpg";
+import diverse3 from "../assets/diverse3.jpg";
+import diverse4 from "../assets/diverse4.jpg";
 const Gallery = () => {
   return (
     <MouseImageTrail
@@ -44,6 +48,10 @@ const Gallery = () => {
             gallery16,
             gallery17,
             gallery18,
+            diverse1,
+            diverse2,
+            diverse3,
+            diverse4,
             
         ]
       }

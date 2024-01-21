@@ -8,7 +8,8 @@ import Work from "../components/Work";
 import Blog from "../components/Blog";
 import Contact from "../components/Contact";
 import Gallery from "../components/Gallery";
-import DateAndTime from "../components/DateAndTime";
+import Achievement from "../components/Achievement";
+// import DateAndTime from "../components/DateAndTime";
 import BirthdayCard from "../components/BirthdayCard";
 const Home = ({ setDarkMode, darkMode, isAuth, postList }) => {
   const style = darkMode ? "bg-black" : "bg-site";
@@ -20,6 +21,7 @@ const Home = ({ setDarkMode, darkMode, isAuth, postList }) => {
       <About />
       <Services />
       <Work />
+      <Achievement />
       <Blog postList={postList} />
       <Gallery />
       {/* <DateAndTime /> */}

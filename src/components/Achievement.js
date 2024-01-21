@@ -37,16 +37,17 @@ const Achievement = () => {
           title="Nava-Thon Champoin 2023"
           description="This is the first time I joined Nava-Thon. I got the first place in the competition."
         />
+        
+        <ShowAchievement
+          image={i4d}
+          title="I4D 2.0 - 2024"
+          description="Top 10 final selected cadidates of I4D 2.0."
+        />
 
         <ShowAchievement
           image={winner}
           title="CADT CUP 2022 & 2023"
           description="We are the first runner up of CADT-CUP 2023 and the second runner up of CADT-CUP 2022."
-        />
-        <ShowAchievement
-          image={i4d}
-          title="I4D 2.0 - 2024"
-          description="Top 10 final selected cadidates of I4D 2.0."
         />
       </div>
     </div>

@@ -1,0 +1,569 @@
+.buble {
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.buble1 {
+    bottom: 20px;
+    left: 20px;
+    animation-name: buble2;
+}
+
+.buble2 {
+    top: 40px;
+    right: 100px;
+    animation-name: buble4;
+}
+
+.buble3 {
+    bottom: 50px;
+    right: 50%;
+    animation-name: buble2;
+}
+
+.buble4 {
+    top: 60px;
+    left: 200px;
+    animation-name: buble3;
+}
+
+.buble5 {
+    top: 200px;
+    left: 50px;
+    animation-name: buble5;
+}
+
+.buble6 {
+    top: 150px;
+    right: 50px;
+    animation-name: buble6;
+}
+
+.buble7 {
+    bottom: 100px;
+    left: 150px;
+    animation-name: buble7;
+}
+
+.buble8 {
+    bottom: 250px;
+    right: 200px;
+    animation-name: buble8;
+}
+
+.buble9 {
+    bottom: 300px;
+    left: 50px;
+    animation-name: buble9;
+}
+
+.buble10 {
+    bottom: 200px;
+    right: 100px;
+    animation-name: buble10;
+}
+
+.buble11 {
+    top: 250px;
+    left: 200px;
+    animation-name: buble11;
+}
+
+.buble12 {
+    top: 300px;
+    right: 50px;
+    animation-name: buble12;
+}
+
+.buble13 {
+    bottom: 150px;
+    left: 150px;
+    animation-name: buble13;
+}
+
+.buble14 {
+    bottom: 200px;
+    right: 200px;
+    animation-name: buble14;
+}
+
+.buble15 {
+    top: 200px;
+    left: 100px;
+    animation-name: buble15;
+}
+
+.buble16 {
+    top: 250px;
+    right: 150px;
+    animation-name: buble16;
+}
+
+.buble17 {
+    bottom: 100px;
+    left: 250px;
+    animation-name: buble17;
+}
+
+.buble18 {
+    bottom: 150px;
+    right: 300px;
+    animation-name: buble18;
+}
+
+
+/* @keyframes buble1 {
+    0%   {top: 0px; left: 100px;}
+    25%  {top: 20px;; left: 220px;}
+    50%  {top: 300px; left: 340px;}
+    75%  {top: 50%; left: 460px;}
+    100% {bottom: 0px;}
+  } */
+
+@keyframes buble2 {
+    0% {
+        top: 0px;
+        right: 100px;
+    }
+
+    25% {
+        bottom: 200px;
+        ;
+        right: 220px;
+    }
+
+    50% {
+        top: 100px;
+        right: 440px;
+    }
+
+    75% {
+        top: 50%;
+        right: 560px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes buble3 {
+    0% {
+        bottom: 0px;
+        left: 100px;
+    }
+
+    25% {
+        bottom: 200px;
+        left: 220px;
+    }
+
+    50% {
+        bottom: 100px;
+        left: 440px;
+    }
+
+    75% {
+        bottom: 50%;
+        left: 560px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes buble4 {
+    0% {
+        top: 0px;
+        left: 200px;
+    }
+
+    25% {
+        top: 150px;
+        left: 320px;
+    }
+
+    50% {
+        top: 100px;
+        left: 540px;
+    }
+
+    75% {
+        top: 50%;
+        left: 660px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes buble5 {
+    0% {
+        top: 0px;
+        left: 100px;
+    }
+
+    25% {
+        top: 250px;
+        left: 220px;
+    }
+
+    50% {
+        top: 150px;
+        left: 440px;
+    }
+
+    75% {
+        top: 50%;
+        left: 560px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes buble6 {
+    0% {
+        top: 0px;
+        right: 50px;
+    }
+
+    25% {
+        top: 200px;
+        right: 220px;
+    }
+
+    50% {
+        top: 100px;
+        right: 440px;
+    }
+
+    75% {
+        top: 50%;
+        right: 560px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes buble7 {
+    0% {
+        bottom: 0px;
+        left: 150px;
+    }
+
+    25% {
+        bottom: 200px;
+        left: 270px;
+    }
+
+    50% {
+        bottom: 100px;
+        left: 490px;
+    }
+
+    75% {
+        bottom: 50%;
+        left: 610px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes buble8 {
+    0% {
+        bottom: 0px;
+        right: 200px;
+    }
+
+    25% {
+        bottom: 150px;
+        right: 320px;
+    }
+
+    50% {
+        bottom: 100px;
+        right: 540px;
+    }
+
+    75% {
+        bottom: 50%;
+        right: 660px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes buble9 {
+    0% {
+        top: 0px;
+        left: 50px;
+    }
+
+    25% {
+        top: 150px;
+        left: 150px;
+    }
+
+    50% {
+        top: 100px;
+        left: 300px;
+    }
+
+    75% {
+        top: 50%;
+        left: 450px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes buble10 {
+    0% {
+        top: 0px;
+        right: 100px;
+    }
+
+    25% {
+        top: 200px;
+        right: 200px;
+    }
+
+    50% {
+        top: 100px;
+        right: 400px;
+    }
+
+    75% {
+        top: 50%;
+        right: 500px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes buble11 {
+    0% {
+        bottom: 0px;
+        left: 200px;
+    }
+
+    25% {
+        bottom: 150px;
+        left: 250px;
+    }
+
+    50% {
+        bottom: 100px;
+        left: 350px;
+    }
+
+    75% {
+        bottom: 50%;
+        left: 450px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes buble12 {
+    0% {
+        bottom: 0px;
+        right: 50px;
+    }
+
+    25% {
+        bottom: 150px;
+        right: 150px;
+    }
+
+    50% {
+        bottom: 100px;
+        right: 300px;
+    }
+
+    75% {
+        bottom: 50%;
+        right: 450px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes buble13 {
+    0% {
+        top: 0px;
+        left: 150px;
+    }
+
+    25% {
+        top: 200px;
+        left: 250px;
+    }
+
+    50% {
+        top: 100px;
+        left: 400px;
+    }
+
+    75% {
+        top: 50%;
+        left: 500px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes buble14 {
+    0% {
+        top: 0px;
+        right: 200px;
+    }
+
+    25% {
+        top: 150px;
+        right: 300px;
+    }
+
+    50% {
+        top: 100px;
+        right: 500px;
+    }
+
+    75% {
+        top: 50%;
+        right: 600px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes buble15 {
+    0% {
+        bottom: 0px;
+        left: 100px;
+    }
+
+    25% {
+        bottom: 150px;
+        left: 200px;
+    }
+
+    50% {
+        bottom: 100px;
+        left: 350px;
+    }
+
+    75% {
+        bottom: 50%;
+        left: 450px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes buble16 {
+    0% {
+        bottom: 0px;
+        right: 150px;
+    }
+
+    25% {
+        bottom: 200px;
+        right: 250px;
+    }
+
+    50% {
+        bottom: 100px;
+        right: 400px;
+    }
+
+    75% {
+        bottom: 50%;
+        right: 500px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes buble17 {
+    0% {
+        top: 0px;
+        left: 250px;
+    }
+
+    25% {
+        top: 150px;
+        left: 350px;
+    }
+
+    50% {
+        top: 100px;
+        left: 500px;
+    }
+
+    75% {
+        top: 50%;
+        left: 600px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes buble18 {
+    0% {
+        top: 0px;
+        right: 300px;
+    }
+
+    25% {
+        top: 200px;
+        right: 400px;
+    }
+
+    50% {
+        top: 100px;
+        right: 600px;
+    }
+
+    75% {
+        top: 50%;
+        right: 700px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+
+/* Add keyframes for more bubbles if needed */

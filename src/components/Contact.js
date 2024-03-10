@@ -12,7 +12,10 @@ const Contact = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    <section id="contact" className="section mb-[500px] lg:mb-[120px]">
+    <section
+      id="contact"
+      className="section mt-[500px] mb-[500px] lg:mb-[120px]"
+    >
       <div className="container mx-auto">
         <motion.div
           variants={fadeIn("right", 0.6)}

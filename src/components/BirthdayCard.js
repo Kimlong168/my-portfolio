@@ -64,7 +64,8 @@ const TiltCard = () => {
   });
 
   // Set your birthday date and time here
-  const birthdayDate = new Date("2024-03-11T00:00:00");
+  const year =  new Date().getFullYear()
+  const birthdayDate = new Date(`${year + 1}-03-11T00:00:00`);
 
   useEffect(() => {
     const interval = setInterval(() => {

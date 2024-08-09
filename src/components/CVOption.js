@@ -1,8 +1,8 @@
 import React from "react";
 
 const CVOption = ({ setShowCVOption }) => {
-  const PNG_FILE_URL = "https://kimlongchann.online/ChannKimlong_CV.png";
-  const PDF_FILE_URL = "https://kimlongchann.online/ChannKimlong_CV.PDF";
+  const PNG_FILE_URL = "https://kimlongchann.netlify.app/ChannKimlong_CV.png";
+  const PDF_FILE_URL = "https://kimlongchann.netlify.app/ChannKimlong_CV.PDF";
 
   const downloadFileAtURL = (url) => {
     const fileName = url.split("/").pop();

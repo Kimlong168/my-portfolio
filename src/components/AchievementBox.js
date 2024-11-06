@@ -22,7 +22,7 @@ const AchievementBox = ({
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: false, amount: amount }}
-      className="flex-1 group overflow-hidden relative border-2 border-white/50 rounded-xl"
+      className="flex-1 group overflow-hidden relative border-2 border-white/50 rounded-xl bg-white min-h-[210px]"
       style={style}
     >
       {/* overlay */}

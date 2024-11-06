@@ -58,7 +58,7 @@ const About = () => {
               <div className="mb-4 font-semibold">
                 {/* I'm a Freelance Front-end Developer with over 5 years of
                 experience. */}
-                I'm a third-year student majoring in Computer Science at the
+                I'm a fourth-year student majoring in Computer Science at the
                 CADT, specializing in Software Engineering.
               </div>
             </div>
@@ -75,7 +75,7 @@ const About = () => {
               <CountUpNumber
                 inView={inView}
                 start={0}
-                end={3}
+                end={4}
                 duration={3}
                 text1="years of"
                 text2="Experience"
@@ -83,18 +83,18 @@ const About = () => {
               <CountUpNumber
                 inView={inView}
                 start={0}
-                end={25}
+                end={30}
                 duration={3}
-                text1="Project"
+                text1="Side Project"
                 text2="Completed"
               />
               <CountUpNumber
                 inView={inView}
                 start={0}
-                end={1}
+                end={3}
                 duration={3}
-                text1="Satisfied"
-                text2="Clients"
+                text1="Real"
+                text2="Projects"
               />
             </div>
             <div className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0">

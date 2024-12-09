@@ -27,7 +27,9 @@ const Home = ({ setDarkMode, darkMode, isAuth, postList }) => {
       {/* <DateAndTime /> */}
       <BirthdayCard />
       <Contact />
-
+      <div className="text-3xl text-red-500 text-center my-10">
+        This is subdomain deployment
+      </div>
       {/* <div className='h-[2300px]'></div> */}
     </div>
   );
